@@ -1,0 +1,191 @@
+@font-face {
+    font-family: ArmCoronet;
+    src: url(./Fonts/ArmCoronetU.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ArmCoronet;
+}
+
+body {
+    background-color: #fffaf4;
+}
+
+main {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first_div,
+.second_div,
+.fourth_div {
+    position: relative;
+}
+
+#names {
+    position: absolute;
+    bottom: 25%;
+    z-index: 2;
+    left: calc(50% - 35%);
+    opacity: 0;
+    animation: 1.5s linear 1 forwards;
+}
+
+@keyframes names {
+    100% {
+        opacity: 1;
+    }
+}
+
+.timer {
+    width: 50%;
+    position: absolute;
+    color: rgb(41, 65, 52);
+    font-size: 50px;
+    bottom: 10%;
+    left: calc(50% - 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: end; */
+    font-size: 60px;
+}
+
+.timer section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer section:last-child {
+    font-size: 40px;
+}
+
+.arrow {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: calc(50% - 25px);
+    animation: arrowDown 1s linear infinite ;
+}
+
+@keyframes arrowDown {
+    50% {
+        top: -10px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: img1_opacity 2s linear 0.2s 1 forwards;
+}
+
+@keyframes img1_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#img3 {
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    opacity: 0;
+    animation:  2s linear 0.1s 1 forwards;
+}
+
+@keyframes img3_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#img4 {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    opacity: 0;
+    animation:  2s linear 0.1s 1 forwards;
+}
+
+@keyframes img4_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#img5 {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    opacity: 0;
+    animation:  2s linear 0.1s 1 forwards;
+}
+
+@keyframes img5_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#img6 {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 25%);
+    opacity: 0;
+    animation:  2s linear 0.1s 1 forwards;
+}
+
+@keyframes img6_opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+.maps {
+    margin-bottom:40px;
+    width: 80%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+h2 {
+    color: rgb(41, 65, 52);
+    font-weight: normal;
+    font-size: 80px;
+    margin: 40px 0;
+    word-spacing: 35px;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 100%;
+    }
+    .timer section {
+        font-size: 35px;
+    }
+    
+    .timer section:last-child {
+        font-size: 30px;
+    }
+}
