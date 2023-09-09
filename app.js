@@ -5,10 +5,10 @@ const img5 = document.getElementById("img5");
 const img6 = document.getElementById("img6");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 2) {
         names.style.animationName = "names";
     };
-    if (window.scrollY > 200) {
+    if (window.scrollY > 10) {
         img3.style.animationName = "img3_opacity";
     };
     if (window.scrollY > 400) {
@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
 })
 
 
-let end = new Date('10/30/2023 20:00');
+let end = new Date('10/20/2023 14:30');
 let _second = 1000;
 let _minute = _second * 60;
 let _hour = _minute * 60;
