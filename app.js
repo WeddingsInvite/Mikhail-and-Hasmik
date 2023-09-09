@@ -5,23 +5,22 @@ const img5 = document.getElementById("img5");
 const img6 = document.getElementById("img6");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 100) {
         names.style.animationName = "names";
     };
-    if (window.scrollY > 300) {
+    if (window.scrollY > 200) {
         img3.style.animationName = "img3_opacity";
     };
-    if (window.scrollY > 600) {
+    if (window.scrollY > 400) {
         img4.style.animationName = "img4_opacity";
     };
-    if (window.scrollY > 900) {
+    if (window.scrollY > 700) {
         img5.style.animationName = "img5_opacity";
     };
-    if (window.scrollY > 1200) {
+    if (window.scrollY > 1100) {
         img6.style.animationName = "img6_opacity";
     }
 })
-
 
 let end = new Date('10/30/2023 20:00');
 let _second = 1000;
