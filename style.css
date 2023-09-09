@@ -75,7 +75,7 @@ main {
     position: absolute;
     top: 0;
     right: calc(50% - 25px);
-    animation: arrowDown 1s linear infinite ;
+    animation: arrowDown 1s linear infinite;
 }
 
 @keyframes arrowDown {
@@ -107,7 +107,7 @@ main {
     bottom: 8%;
     right: 0;
     opacity: 0;
-    animation:  2s linear 0.1s 1 forwards;
+    animation: 2s linear 0.1s 1 forwards;
 }
 
 @keyframes img3_opacity {
@@ -122,7 +122,7 @@ main {
     top: 8%;
     left: 0;
     opacity: 0;
-    animation:  2s linear 0.1s 1 forwards;
+    animation: 2s linear 0.1s 1 forwards;
 }
 
 @keyframes img4_opacity {
@@ -136,7 +136,7 @@ main {
     bottom: 20%;
     right: 0;
     opacity: 0;
-    animation:  2s linear 0.1s 1 forwards;
+    animation: 2s linear 0.1s 1 forwards;
 }
 
 @keyframes img5_opacity {
@@ -150,7 +150,7 @@ main {
     top: 0;
     left: calc(50% - 25%);
     opacity: 0;
-    animation:  2s linear 0.1s 1 forwards;
+    animation: 2s linear 0.1s 1 forwards;
 }
 
 @keyframes img6_opacity {
@@ -160,7 +160,7 @@ main {
 }
 
 .maps {
-    margin-bottom:40px;
+    margin-bottom: 40px;
     width: 80%;
     height: 1000px;
     display: flex;
@@ -181,11 +181,41 @@ h2 {
     main {
         width: 100%;
     }
+
     .timer section {
         font-size: 35px;
     }
-    
+
     .timer section:last-child {
         font-size: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+
+    .timer section {
+        font-size: 25px;
+    }
+
+    .timer section:last-child {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+
+    h2 {
+        font-size: 25px;
+        word-spacing: 5px;
     }
 }

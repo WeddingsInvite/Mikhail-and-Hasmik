@@ -22,6 +22,7 @@ window.addEventListener("scroll", () => {
     }
 })
 
+
 let end = new Date('10/30/2023 20:00');
 let _second = 1000;
 let _minute = _second * 60;
