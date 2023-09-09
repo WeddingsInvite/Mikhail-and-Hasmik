@@ -36,7 +36,7 @@ main {
     z-index: 2;
     left: calc(50% - 35%);
     opacity: 0;
-    animation: names 1.5s linear 1 forwards;
+    animation: names 2s linear 1 forwards;
 }
 
 @keyframes names {
