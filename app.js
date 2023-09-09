@@ -1,16 +1,8 @@
-const names = document.getElementById("names");
-const img3 = document.getElementById("img3");
 const img4 = document.getElementById("img4");
 const img5 = document.getElementById("img5");
 const img6 = document.getElementById("img6");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 2) {
-        names.style.animationName = "names";
-    };
-    if (window.scrollY > 10) {
-        img3.style.animationName = "img3_opacity";
-    };
     if (window.scrollY > 400) {
         img4.style.animationName = "img4_opacity";
     };
